@@ -11,7 +11,7 @@ import SwiftUI
 struct Electric_FruitsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

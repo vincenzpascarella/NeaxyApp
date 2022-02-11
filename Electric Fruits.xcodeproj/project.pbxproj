@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B210E4627B6570D002C1A00 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4527B6570D002C1A00 /* MainModel.swift */; };
+		7B210E4827B65719002C1A00 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4727B65719002C1A00 /* MainViewModel.swift */; };
+		7B210E4A27B6575E002C1A00 /* Showroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4927B6575E002C1A00 /* Showroom.swift */; };
+		7B210E4C27B65986002C1A00 /* PlanetsShowroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */; };
+		7B210E4E27B659A3002C1A00 /* PlanetsShowroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4D27B659A3002C1A00 /* PlanetsShowroomView.swift */; };
 		7BFA211F27B6534000BCE7EA /* Electric_FruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA211E27B6534000BCE7EA /* Electric_FruitsApp.swift */; };
-		7BFA212127B6534000BCE7EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA212027B6534000BCE7EA /* ContentView.swift */; };
+		7BFA212127B6534000BCE7EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA212027B6534000BCE7EA /* MainView.swift */; };
 		7BFA212327B6534200BCE7EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFA212227B6534200BCE7EA /* Assets.xcassets */; };
 		7BFA212627B6534200BCE7EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFA212527B6534200BCE7EA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B210E4527B6570D002C1A00 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		7B210E4727B65719002C1A00 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7B210E4927B6575E002C1A00 /* Showroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showroom.swift; sourceTree = "<group>"; };
+		7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsShowroom.swift; sourceTree = "<group>"; };
+		7B210E4D27B659A3002C1A00 /* PlanetsShowroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsShowroomView.swift; sourceTree = "<group>"; };
 		7BFA211B27B6534000BCE7EA /* Electric Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electric Fruits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFA211E27B6534000BCE7EA /* Electric_FruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_FruitsApp.swift; sourceTree = "<group>"; };
-		7BFA212027B6534000BCE7EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BFA212027B6534000BCE7EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BFA212227B6534200BCE7EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BFA212527B6534200BCE7EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				7BFA211E27B6534000BCE7EA /* Electric_FruitsApp.swift */,
-				7BFA212027B6534000BCE7EA /* ContentView.swift */,
+				7BFA212C27B654C100BCE7EA /* Models */,
+				7BFA212D27B654CE00BCE7EA /* ViewModels */,
+				7BFA212E27B654ED00BCE7EA /* Views */,
 				7BFA212227B6534200BCE7EA /* Assets.xcassets */,
 				7BFA212427B6534200BCE7EA /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				7BFA212527B6534200BCE7EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BFA212C27B654C100BCE7EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B210E4527B6570D002C1A00 /* MainModel.swift */,
+				7B210E4927B6575E002C1A00 /* Showroom.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BFA212D27B654CE00BCE7EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B210E4727B65719002C1A00 /* MainViewModel.swift */,
+				7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BFA212E27B654ED00BCE7EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA212027B6534000BCE7EA /* MainView.swift */,
+				7B210E4D27B659A3002C1A00 /* PlanetsShowroomView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFA212127B6534000BCE7EA /* ContentView.swift in Sources */,
+				7BFA212127B6534000BCE7EA /* MainView.swift in Sources */,
 				7BFA211F27B6534000BCE7EA /* Electric_FruitsApp.swift in Sources */,
+				7B210E4E27B659A3002C1A00 /* PlanetsShowroomView.swift in Sources */,
+				7B210E4627B6570D002C1A00 /* MainModel.swift in Sources */,
+				7B210E4827B65719002C1A00 /* MainViewModel.swift in Sources */,
+				7B210E4C27B65986002C1A00 /* PlanetsShowroom.swift in Sources */,
+				7B210E4A27B6575E002C1A00 /* Showroom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
