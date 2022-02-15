@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Electric_FruitsApp: App {
+    let collection = PlanetsShowroom()
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(collection: collection)
         }
     }
 }

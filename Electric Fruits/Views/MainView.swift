@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @ObservedObject var collection: PlanetsShowroom
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            NavBarMainView()
+            PlanetsShowroomView(collection)
+            ButtonView(label: "Start a room")
+        }
+        .background(Color(.systemIndigo).ignoresSafeArea())
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        let collection = PlanetsShowroom()
+        MainView(collection: collection)
     }
 }

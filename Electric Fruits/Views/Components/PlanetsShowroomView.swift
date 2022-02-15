@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct PlanetsShowroomView: View {
-    @ObservedObject var collection: PlanetsShowroom
+    
+    var collection: PlanetsShowroom
+    
+    init(_ collection: PlanetsShowroom){
+        self.collection = collection
+    }
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
@@ -41,6 +46,7 @@ struct PlanetView: View{
                 Spacer(minLength: 16)
                 
             }//VStack
+            .frame(maxHeight: geometry.size.height)
         }//GeometryReader
     }
     
@@ -58,9 +64,9 @@ struct PlanetsShowroomView_Previews: PreviewProvider {
     static var previews: some View {
         let collection = PlanetsShowroom()
         Group {
-            PlanetsShowroomView(collection: collection)
+            PlanetsShowroomView(collection)
                 .previewDevice("iPhone 11")
-            PlanetsShowroomView(collection: collection)
+            PlanetsShowroomView(collection)
                 .previewDevice("iPhone 12 mini")
         }
     }
