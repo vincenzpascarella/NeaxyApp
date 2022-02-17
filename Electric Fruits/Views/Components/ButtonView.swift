@@ -22,5 +22,6 @@ struct ButtonView: View {
         }
         .frame(maxHeight: UIScreen.main.bounds.size.height/10)
         .padding()
+        
     }
 }

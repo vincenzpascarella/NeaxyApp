@@ -7,34 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0837E227BEB71C0012A0F9 /* Swipeback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0837E127BEB71C0012A0F9 /* Swipeback.swift */; };
+		7B0837E427BECC2D0012A0F9 /* JoinPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0837E327BECC2D0012A0F9 /* JoinPopUpView.swift */; };
 		7B210E4627B6570D002C1A00 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4527B6570D002C1A00 /* MainModel.swift */; };
 		7B210E4827B65719002C1A00 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4727B65719002C1A00 /* MainViewModel.swift */; };
 		7B210E4A27B6575E002C1A00 /* Showroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4927B6575E002C1A00 /* Showroom.swift */; };
 		7B210E4C27B65986002C1A00 /* PlanetsShowroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */; };
-		7B210E4E27B659A3002C1A00 /* PlanetsShowroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4D27B659A3002C1A00 /* PlanetsShowroomView.swift */; };
+		7B210E4E27B659A3002C1A00 /* PlanetShowroomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4D27B659A3002C1A00 /* PlanetShowroomGridView.swift */; };
 		7B96C88227BBBE3D002E8CFC /* NavBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96C88127BBBE3D002E8CFC /* NavBarMainView.swift */; };
 		7B96C88427BBD667002E8CFC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96C88327BBD667002E8CFC /* ButtonView.swift */; };
 		7B96C88827BBD9A3002E8CFC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96C88727BBD9A3002E8CFC /* Extensions.swift */; };
+		7B9BDE2227BD0346001E6B88 /* JoinButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BDE2127BD0346001E6B88 /* JoinButtonView.swift */; };
+		7B9BDE2427BD41E8001E6B88 /* PlanetShowroomSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BDE2327BD41E8001E6B88 /* PlanetShowroomSingleView.swift */; };
+		7B9BDE2627BE4495001E6B88 /* RoomStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BDE2527BE4495001E6B88 /* RoomStartView.swift */; };
+		7B9BDE2827BE4530001E6B88 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BDE2727BE4530001E6B88 /* Rooms.swift */; };
+		7B9BDE2A27BE487C001E6B88 /* RoomStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BDE2927BE487C001E6B88 /* RoomStart.swift */; };
 		7BFA211F27B6534000BCE7EA /* Electric_FruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA211E27B6534000BCE7EA /* Electric_FruitsApp.swift */; };
 		7BFA212127B6534000BCE7EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA212027B6534000BCE7EA /* MainView.swift */; };
 		7BFA212327B6534200BCE7EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFA212227B6534200BCE7EA /* Assets.xcassets */; };
 		7BFA212627B6534200BCE7EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFA212527B6534200BCE7EA /* Preview Assets.xcassets */; };
+		7BFCEABF27BE56F200DFCAEE /* ButtonRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFCEABE27BE56F200DFCAEE /* ButtonRoomView.swift */; };
+		7BFCEAC127BE6BE700DFCAEE /* RoomCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFCEAC027BE6BE700DFCAEE /* RoomCodeView.swift */; };
+		7BFCEAC327BE6C4F00DFCAEE /* TimeNextPlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFCEAC227BE6C4F00DFCAEE /* TimeNextPlanetView.swift */; };
+		7BFCEAC527BEAAA200DFCAEE /* CallRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFCEAC427BEAAA200DFCAEE /* CallRoomView.swift */; };
+		7BFCEAC727BEAD5E00DFCAEE /* StartRoomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFCEAC627BEAD5E00DFCAEE /* StartRoomHeaderView.swift */; };
+		7BFCEACD27BEAEE500DFCAEE /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFCEACC27BEAEE500DFCAEE /* RoomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B0837E127BEB71C0012A0F9 /* Swipeback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipeback.swift; sourceTree = "<group>"; };
+		7B0837E327BECC2D0012A0F9 /* JoinPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPopUpView.swift; sourceTree = "<group>"; };
 		7B210E4527B6570D002C1A00 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		7B210E4727B65719002C1A00 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7B210E4927B6575E002C1A00 /* Showroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showroom.swift; sourceTree = "<group>"; };
 		7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsShowroom.swift; sourceTree = "<group>"; };
-		7B210E4D27B659A3002C1A00 /* PlanetsShowroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsShowroomView.swift; sourceTree = "<group>"; };
+		7B210E4D27B659A3002C1A00 /* PlanetShowroomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetShowroomGridView.swift; sourceTree = "<group>"; };
 		7B96C88127BBBE3D002E8CFC /* NavBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarMainView.swift; sourceTree = "<group>"; };
 		7B96C88327BBD667002E8CFC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		7B96C88727BBD9A3002E8CFC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B9BDE2127BD0346001E6B88 /* JoinButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinButtonView.swift; sourceTree = "<group>"; };
+		7B9BDE2327BD41E8001E6B88 /* PlanetShowroomSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetShowroomSingleView.swift; sourceTree = "<group>"; };
+		7B9BDE2527BE4495001E6B88 /* RoomStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStartView.swift; sourceTree = "<group>"; };
+		7B9BDE2727BE4530001E6B88 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
+		7B9BDE2927BE487C001E6B88 /* RoomStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStart.swift; sourceTree = "<group>"; };
 		7BFA211B27B6534000BCE7EA /* Electric Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electric Fruits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFA211E27B6534000BCE7EA /* Electric_FruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_FruitsApp.swift; sourceTree = "<group>"; };
 		7BFA212027B6534000BCE7EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BFA212227B6534200BCE7EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BFA212527B6534200BCE7EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BFCEABE27BE56F200DFCAEE /* ButtonRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRoomView.swift; sourceTree = "<group>"; };
+		7BFCEAC027BE6BE700DFCAEE /* RoomCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCodeView.swift; sourceTree = "<group>"; };
+		7BFCEAC227BE6C4F00DFCAEE /* TimeNextPlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeNextPlanetView.swift; sourceTree = "<group>"; };
+		7BFCEAC427BEAAA200DFCAEE /* CallRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRoomView.swift; sourceTree = "<group>"; };
+		7BFCEAC627BEAD5E00DFCAEE /* StartRoomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoomHeaderView.swift; sourceTree = "<group>"; };
+		7BFCEACC27BEAEE500DFCAEE /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +77,12 @@
 		7B96C88527BBD681002E8CFC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				7B210E4D27B659A3002C1A00 /* PlanetsShowroomView.swift */,
+				7B210E4D27B659A3002C1A00 /* PlanetShowroomGridView.swift */,
+				7B9BDE2327BD41E8001E6B88 /* PlanetShowroomSingleView.swift */,
 				7B96C88127BBBE3D002E8CFC /* NavBarMainView.swift */,
 				7B96C88327BBD667002E8CFC /* ButtonView.swift */,
+				7B9BDE2127BD0346001E6B88 /* JoinButtonView.swift */,
+				7B0837E327BECC2D0012A0F9 /* JoinPopUpView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -62,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				7B96C88727BBD9A3002E8CFC /* Extensions.swift */,
+				7B0837E127BEB71C0012A0F9 /* Swipeback.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -85,8 +115,8 @@
 		7BFA211D27B6534000BCE7EA /* Electric Fruits */ = {
 			isa = PBXGroup;
 			children = (
-				7B96C88627BBD98C002E8CFC /* Extensions */,
 				7BFA211E27B6534000BCE7EA /* Electric_FruitsApp.swift */,
+				7B96C88627BBD98C002E8CFC /* Extensions */,
 				7BFA212C27B654C100BCE7EA /* Models */,
 				7BFA212D27B654CE00BCE7EA /* ViewModels */,
 				7BFA212E27B654ED00BCE7EA /* Views */,
@@ -109,6 +139,7 @@
 			children = (
 				7B210E4527B6570D002C1A00 /* MainModel.swift */,
 				7B210E4927B6575E002C1A00 /* Showroom.swift */,
+				7B9BDE2727BE4530001E6B88 /* Rooms.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +149,7 @@
 			children = (
 				7B210E4727B65719002C1A00 /* MainViewModel.swift */,
 				7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */,
+				7B9BDE2927BE487C001E6B88 /* RoomStart.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -125,10 +157,41 @@
 		7BFA212E27B654ED00BCE7EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7B96C88527BBD681002E8CFC /* Components */,
 				7BFA212027B6534000BCE7EA /* MainView.swift */,
+				7BFCEACC27BEAEE500DFCAEE /* RoomView.swift */,
+				7BFCEACB27BEAE0600DFCAEE /* CallRoom */,
+				7BFCEAC827BEADA500DFCAEE /* StartRoom */,
+				7B96C88527BBD681002E8CFC /* Components */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7BFCEAC827BEADA500DFCAEE /* StartRoom */ = {
+			isa = PBXGroup;
+			children = (
+				7B9BDE2527BE4495001E6B88 /* RoomStartView.swift */,
+				7BFCEACA27BEADE600DFCAEE /* Components StartRoom */,
+			);
+			path = StartRoom;
+			sourceTree = "<group>";
+		};
+		7BFCEACA27BEADE600DFCAEE /* Components StartRoom */ = {
+			isa = PBXGroup;
+			children = (
+				7BFCEAC227BE6C4F00DFCAEE /* TimeNextPlanetView.swift */,
+				7BFCEAC027BE6BE700DFCAEE /* RoomCodeView.swift */,
+				7BFCEABE27BE56F200DFCAEE /* ButtonRoomView.swift */,
+				7BFCEAC627BEAD5E00DFCAEE /* StartRoomHeaderView.swift */,
+			);
+			path = "Components StartRoom";
+			sourceTree = "<group>";
+		};
+		7BFCEACB27BEAE0600DFCAEE /* CallRoom */ = {
+			isa = PBXGroup;
+			children = (
+				7BFCEAC427BEAAA200DFCAEE /* CallRoomView.swift */,
+			);
+			path = CallRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,15 +264,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0837E427BECC2D0012A0F9 /* JoinPopUpView.swift in Sources */,
+				7B9BDE2627BE4495001E6B88 /* RoomStartView.swift in Sources */,
 				7BFA212127B6534000BCE7EA /* MainView.swift in Sources */,
+				7B9BDE2227BD0346001E6B88 /* JoinButtonView.swift in Sources */,
+				7BFCEACD27BEAEE500DFCAEE /* RoomView.swift in Sources */,
+				7BFCEABF27BE56F200DFCAEE /* ButtonRoomView.swift in Sources */,
 				7B96C88227BBBE3D002E8CFC /* NavBarMainView.swift in Sources */,
 				7BFA211F27B6534000BCE7EA /* Electric_FruitsApp.swift in Sources */,
-				7B210E4E27B659A3002C1A00 /* PlanetsShowroomView.swift in Sources */,
+				7B0837E227BEB71C0012A0F9 /* Swipeback.swift in Sources */,
+				7B210E4E27B659A3002C1A00 /* PlanetShowroomGridView.swift in Sources */,
+				7B9BDE2A27BE487C001E6B88 /* RoomStart.swift in Sources */,
 				7B210E4627B6570D002C1A00 /* MainModel.swift in Sources */,
 				7B96C88827BBD9A3002E8CFC /* Extensions.swift in Sources */,
+				7B9BDE2827BE4530001E6B88 /* Rooms.swift in Sources */,
+				7BFCEAC727BEAD5E00DFCAEE /* StartRoomHeaderView.swift in Sources */,
+				7BFCEAC527BEAAA200DFCAEE /* CallRoomView.swift in Sources */,
 				7B210E4827B65719002C1A00 /* MainViewModel.swift in Sources */,
 				7B210E4C27B65986002C1A00 /* PlanetsShowroom.swift in Sources */,
+				7BFCEAC127BE6BE700DFCAEE /* RoomCodeView.swift in Sources */,
 				7B210E4A27B6575E002C1A00 /* Showroom.swift in Sources */,
+				7B9BDE2427BD41E8001E6B88 /* PlanetShowroomSingleView.swift in Sources */,
+				7BFCEAC327BE6C4F00DFCAEE /* TimeNextPlanetView.swift in Sources */,
 				7B96C88427BBD667002E8CFC /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,11 @@ import SwiftUI
 @main
 struct Electric_FruitsApp: App {
     let collection = PlanetsShowroom()
+    let starting = RoomStart()
     
     var body: some Scene {
         WindowGroup {
-            MainView(collection: collection)
+            MainView(collection: collection, starting: starting)
         }
     }
 }

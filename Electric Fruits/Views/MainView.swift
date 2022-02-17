@@ -10,21 +10,42 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var collection: PlanetsShowroom
-    
+    @ObservedObject var starting: RoomStart
+    @State var joinPopup = false
     
     var body: some View {
-        VStack{
-            NavBarMainView()
-            PlanetsShowroomView(collection)
-            ButtonView(label: "Start a room")
+        NavigationView{
+            VStack{
+                NavBarMainView(collection)
+                if collection.isGrid{
+                    PlanetShowroomGridView(collection)
+                } else {
+                    PlanetShowroomSingleView(collection)
+                }
+                NavigationLink(destination: RoomView(starting)){
+                    ButtonView(label: "Start a room")
+                }
+                
+                JoinButtonView(clicked: $joinPopup)
+            }//VStack
+            .background(Color(.systemIndigo).ignoresSafeArea())
+            .navigationBarHidden(true)
+            .popupNavigationView(show: $joinPopup) {
+                JoinPopUpView(close: $joinPopup)
+            }
         }
-        .background(Color(.systemIndigo).ignoresSafeArea())
-    }
+    }//body
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         let collection = PlanetsShowroom()
-        MainView(collection: collection)
+        let room = RoomStart()
+        Group {
+            MainView(collection: collection, starting: room)
+                .previewDevice("iPhone 11")
+            MainView(collection: collection, starting: room)
+                .previewDevice("iPhone 12 mini")
+        }
     }
 }

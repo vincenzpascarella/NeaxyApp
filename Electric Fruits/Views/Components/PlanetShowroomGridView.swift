@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlanetsShowroomView: View {
+struct PlanetShowroomGridView: View {
     
     var collection: PlanetsShowroom
     
@@ -16,15 +16,27 @@ struct PlanetsShowroomView: View {
     }
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack{
-                ForEach(collection.planetCollection){ planet in
-                    PlanetView(planet: planet)
-                        .frame(minWidth: UIScreen.main.bounds.size.width/(2.6))
-                }
-            } //HStack
-            .padding(.horizontal)
-        }//ScrollView
+        ZStack(alignment: .bottom){
+            ScrollView(.horizontal, showsIndicators: false){
+                HStack{
+                    ForEach(collection.planetCollection){ planet in
+                        PlanetView(planet: planet)
+                            .frame(minWidth: UIScreen.main.bounds.size.width/(2.6))
+                    }
+                } //HStack
+                .padding(.horizontal)
+            }//ScrollView
+            
+            Ellipse()
+                .frame(
+                    maxWidth: UIScreen.main.bounds.size.width*0.7,
+                    maxHeight: UIScreen.main.bounds.size.height/40
+                )
+                .padding()
+                .blur(radius: 10)
+                .opacity(0.08)
+                .foregroundColor(.white)
+        }
     }
 }
 
@@ -37,16 +49,15 @@ struct PlanetView: View{
                 
                 Spacer(minLength: 16)
                 
-                Text(planet.content)
+                Image(uiImage: UIImage(named: planet.content)!)
                     .padding(.top, randomPosition(in: geometry.size))
                     .padding(.bottom, randomPosition(in: geometry.size))
-                    .font(.system(size: geometry.size.width*0.9))
-                
+                    .scaleEffect(0.5)
                 
                 Spacer(minLength: 16)
                 
             }//VStack
-            .frame(maxHeight: geometry.size.height)
+            .frame(maxWidth: geometry.size.width ,maxHeight: geometry.size.height)
         }//GeometryReader
     }
     
@@ -56,7 +67,7 @@ struct PlanetView: View{
     
     private struct planetConstant {
         static let heightDivisor:CGFloat = 2
-        static let maxRandom:Double = 1.5
+        static let maxRandom:Double = 2.6
     }
 }
 
@@ -64,9 +75,9 @@ struct PlanetsShowroomView_Previews: PreviewProvider {
     static var previews: some View {
         let collection = PlanetsShowroom()
         Group {
-            PlanetsShowroomView(collection)
+            PlanetShowroomGridView(collection)
                 .previewDevice("iPhone 11")
-            PlanetsShowroomView(collection)
+            PlanetShowroomGridView(collection)
                 .previewDevice("iPhone 12 mini")
         }
     }

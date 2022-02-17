@@ -10,16 +10,24 @@ import Foundation
 struct Showroom<ShowContent> {
     private(set) var showItems: Array<ShowItem>
     
-    init(numberOfItems: Int, createShowrommContent: (Int) -> ShowContent){
+    private(set) var isGrid: Bool
+    
+    init(numberOfItems: Int, isGrid: Bool = false, createShowrommContent: (Int) -> ShowContent){
         showItems = []
+        self.isGrid = isGrid
         for item in 0..<numberOfItems {
             let content = createShowrommContent(item)
             showItems.append(ShowItem(id: item, content: content))
         }
     }
     
+    mutating func gridSwap(_ isGrid: Bool){
+       self.isGrid.toggle()
+    }
+    
     struct ShowItem: Identifiable {
         let id: Int
         let content: ShowContent
     }
+    
 }
