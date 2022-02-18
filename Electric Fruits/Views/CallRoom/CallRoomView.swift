@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct CallRoomView: View {
+//    @ObservedObject var call: ChildHostingController
+//    var call = ViewController()
     var body: some View {
         VStack{
-            Text("he")
-        }//VStack
+            AgoraVideo()
+        }
         .navigationBarHidden(true)
         
     }

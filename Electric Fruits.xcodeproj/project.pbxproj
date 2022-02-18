@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA0A13327BF9C0A00215945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA0A13227BF9C0A00215945 /* ViewController.swift */; };
+		7647CF43D6E0038EBCA4860D /* Pods_Electric_Fruits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B979ED1184A83A42C30EAA2 /* Pods_Electric_Fruits.framework */; };
 		7B0837E227BEB71C0012A0F9 /* Swipeback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0837E127BEB71C0012A0F9 /* Swipeback.swift */; };
 		7B0837E427BECC2D0012A0F9 /* JoinPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0837E327BECC2D0012A0F9 /* JoinPopUpView.swift */; };
 		7B210E4627B6570D002C1A00 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4527B6570D002C1A00 /* MainModel.swift */; };
@@ -35,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EA0A13227BF9C0A00215945 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52E63632E811EF0D4FCEC54A /* Pods-Electric Fruits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electric Fruits.release.xcconfig"; path = "Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits.release.xcconfig"; sourceTree = "<group>"; };
+		5B979ED1184A83A42C30EAA2 /* Pods_Electric_Fruits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electric_Fruits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0837E127BEB71C0012A0F9 /* Swipeback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipeback.swift; sourceTree = "<group>"; };
 		7B0837E327BECC2D0012A0F9 /* JoinPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPopUpView.swift; sourceTree = "<group>"; };
 		7B210E4527B6570D002C1A00 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		7BFCEAC427BEAAA200DFCAEE /* CallRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRoomView.swift; sourceTree = "<group>"; };
 		7BFCEAC627BEAD5E00DFCAEE /* StartRoomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoomHeaderView.swift; sourceTree = "<group>"; };
 		7BFCEACC27BEAEE500DFCAEE /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		86861A4E9E67EEB9C70BF72E /* Pods-Electric Fruits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electric Fruits.debug.xcconfig"; path = "Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7647CF43D6E0038EBCA4860D /* Pods_Electric_Fruits.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +108,8 @@
 			children = (
 				7BFA211D27B6534000BCE7EA /* Electric Fruits */,
 				7BFA211C27B6534000BCE7EA /* Products */,
+				BD443C6E506E7644F021B8E2 /* Pods */,
+				9DFF382C56B4105237EA2EC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,9 +198,27 @@
 		7BFCEACB27BEAE0600DFCAEE /* CallRoom */ = {
 			isa = PBXGroup;
 			children = (
+				3EA0A13227BF9C0A00215945 /* ViewController.swift */,
 				7BFCEAC427BEAAA200DFCAEE /* CallRoomView.swift */,
 			);
 			path = CallRoom;
+			sourceTree = "<group>";
+		};
+		9DFF382C56B4105237EA2EC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B979ED1184A83A42C30EAA2 /* Pods_Electric_Fruits.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD443C6E506E7644F021B8E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86861A4E9E67EEB9C70BF72E /* Pods-Electric Fruits.debug.xcconfig */,
+				52E63632E811EF0D4FCEC54A /* Pods-Electric Fruits.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BFA212927B6534200BCE7EA /* Build configuration list for PBXNativeTarget "Electric Fruits" */;
 			buildPhases = (
+				BA1B118102068D041F280A1A /* [CP] Check Pods Manifest.lock */,
 				7BFA211727B6534000BCE7EA /* Sources */,
 				7BFA211827B6534000BCE7EA /* Frameworks */,
 				7BFA211927B6534000BCE7EA /* Resources */,
+				F9AA02D17EA828927100718E /* [CP] Embed Pods Frameworks */,
+				1E385E14A0E5D5F30548FD26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +289,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E385E14A0E5D5F30548FD26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1B118102068D041F280A1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electric Fruits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AA02D17EA828927100718E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Electric Fruits/Pods-Electric Fruits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BFA211727B6534000BCE7EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +359,7 @@
 				7B9BDE2227BD0346001E6B88 /* JoinButtonView.swift in Sources */,
 				7BFCEACD27BEAEE500DFCAEE /* RoomView.swift in Sources */,
 				7BFCEABF27BE56F200DFCAEE /* ButtonRoomView.swift in Sources */,
+				3EA0A13327BF9C0A00215945 /* ViewController.swift in Sources */,
 				7B96C88227BBBE3D002E8CFC /* NavBarMainView.swift in Sources */,
 				7BFA211F27B6534000BCE7EA /* Electric_FruitsApp.swift in Sources */,
 				7B0837E227BEB71C0012A0F9 /* Swipeback.swift in Sources */,
@@ -411,15 +501,18 @@
 		};
 		7BFA212A27B6534200BCE7EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86861A4E9E67EEB9C70BF72E /* Pods-Electric Fruits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Electric Fruits/Preview Content\"";
-				DEVELOPMENT_TEAM = G9H564688N;
+				DEVELOPMENT_TEAM = T74HYBPW22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To see you";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To hear you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -430,8 +523,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VincenzoPascarella.Electric-Fruits";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simona-ettari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -441,15 +534,18 @@
 		};
 		7BFA212B27B6534200BCE7EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E63632E811EF0D4FCEC54A /* Pods-Electric Fruits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Electric Fruits/Preview Content\"";
-				DEVELOPMENT_TEAM = G9H564688N;
+				DEVELOPMENT_TEAM = T74HYBPW22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To see you";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To hear you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,8 +556,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VincenzoPascarella.Electric-Fruits";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simona-ettari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
