@@ -9,9 +9,13 @@ import SwiftUI
 
 struct JoinPopUpView: View {
     
+
     @Binding var close: Bool
     
+//    @State private var otpText: String = ""
+
     var body: some View {
+        
         GeometryReader { geometry in
             VStack{
                 HStack{
@@ -43,6 +47,10 @@ struct JoinPopUpView: View {
                 Text("Insert here the room code")
                     .font(.title2)
                     .foregroundColor(Color(0x32325E))
+                
+                Spacer()
+                
+                OtpView()
                 
                 Spacer()
                 

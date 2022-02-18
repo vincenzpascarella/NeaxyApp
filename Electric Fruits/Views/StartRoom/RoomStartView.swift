@@ -11,6 +11,9 @@ struct RoomStartView: View {
     
     @ObservedObject var starting: RoomStart
     @State var joinPopup = false
+    
+    private let backgroundColor: Color = Color(.systemIndigo)
+
 
         
     init(_ starting: RoomStart){
@@ -49,9 +52,9 @@ struct RoomStartView: View {
             JoinButtonView(clicked: $joinPopup)
             
         }//Vstack
-        .background(Color(.systemIndigo).ignoresSafeArea())
+        .background(backgroundColor.ignoresSafeArea())
         .navigationBarHidden(true)
-        .popupNavigationView(show: $joinPopup) {
+        .popupNavigationView(show: $joinPopup, backgroundColor: backgroundColor) {
             JoinPopUpView(close: $joinPopup)
         }
     }

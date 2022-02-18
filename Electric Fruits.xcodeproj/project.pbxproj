@@ -16,6 +16,8 @@
 		7B210E4A27B6575E002C1A00 /* Showroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4927B6575E002C1A00 /* Showroom.swift */; };
 		7B210E4C27B65986002C1A00 /* PlanetsShowroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */; };
 		7B210E4E27B659A3002C1A00 /* PlanetShowroomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B210E4D27B659A3002C1A00 /* PlanetShowroomGridView.swift */; };
+		7B91B63C27BFA0DA00CE3DB8 /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B91B63B27BFA0DA00CE3DB8 /* OtpView.swift */; };
+		7B91B63E27BFA12300CE3DB8 /* Otp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B91B63D27BFA12300CE3DB8 /* Otp.swift */; };
 		7B96C88227BBBE3D002E8CFC /* NavBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96C88127BBBE3D002E8CFC /* NavBarMainView.swift */; };
 		7B96C88427BBD667002E8CFC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96C88327BBD667002E8CFC /* ButtonView.swift */; };
 		7B96C88827BBD9A3002E8CFC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96C88727BBD9A3002E8CFC /* Extensions.swift */; };
@@ -47,6 +49,8 @@
 		7B210E4927B6575E002C1A00 /* Showroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showroom.swift; sourceTree = "<group>"; };
 		7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsShowroom.swift; sourceTree = "<group>"; };
 		7B210E4D27B659A3002C1A00 /* PlanetShowroomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetShowroomGridView.swift; sourceTree = "<group>"; };
+		7B91B63B27BFA0DA00CE3DB8 /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		7B91B63D27BFA12300CE3DB8 /* Otp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Otp.swift; sourceTree = "<group>"; };
 		7B96C88127BBBE3D002E8CFC /* NavBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarMainView.swift; sourceTree = "<group>"; };
 		7B96C88327BBD667002E8CFC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		7B96C88727BBD9A3002E8CFC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				7B96C88327BBD667002E8CFC /* ButtonView.swift */,
 				7B9BDE2127BD0346001E6B88 /* JoinButtonView.swift */,
 				7B0837E327BECC2D0012A0F9 /* JoinPopUpView.swift */,
+				7B91B63B27BFA0DA00CE3DB8 /* OtpView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				7B210E4727B65719002C1A00 /* MainViewModel.swift */,
 				7B210E4B27B65986002C1A00 /* PlanetsShowroom.swift */,
 				7B9BDE2927BE487C001E6B88 /* RoomStart.swift */,
+				7B91B63D27BFA12300CE3DB8 /* Otp.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -362,12 +368,14 @@
 				3EA0A13327BF9C0A00215945 /* ViewController.swift in Sources */,
 				7B96C88227BBBE3D002E8CFC /* NavBarMainView.swift in Sources */,
 				7BFA211F27B6534000BCE7EA /* Electric_FruitsApp.swift in Sources */,
+				7B91B63E27BFA12300CE3DB8 /* Otp.swift in Sources */,
 				7B0837E227BEB71C0012A0F9 /* Swipeback.swift in Sources */,
 				7B210E4E27B659A3002C1A00 /* PlanetShowroomGridView.swift in Sources */,
 				7B9BDE2A27BE487C001E6B88 /* RoomStart.swift in Sources */,
 				7B210E4627B6570D002C1A00 /* MainModel.swift in Sources */,
 				7B96C88827BBD9A3002E8CFC /* Extensions.swift in Sources */,
 				7B9BDE2827BE4530001E6B88 /* Rooms.swift in Sources */,
+				7B91B63C27BFA0DA00CE3DB8 /* OtpView.swift in Sources */,
 				7BFCEAC727BEAD5E00DFCAEE /* StartRoomHeaderView.swift in Sources */,
 				7BFCEAC527BEAAA200DFCAEE /* CallRoomView.swift in Sources */,
 				7B210E4827B65719002C1A00 /* MainViewModel.swift in Sources */,
