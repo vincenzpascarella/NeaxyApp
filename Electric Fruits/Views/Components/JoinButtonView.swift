@@ -15,11 +15,14 @@ struct JoinButtonView: View {
             clicked.toggle()
         } label: {
             Text("Join a room")
-                .font(.body)
+                .font(.title3)
                 .underline()
                 .foregroundColor(.white)
+                .contentShape(Rectangle())
                 .padding()
+                .padding(.horizontal)
         }
+        .padding(.vertical, -16)
     }
 }
 
